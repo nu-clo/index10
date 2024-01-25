@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>WEB PRAROZ - About Us</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           font-family: Century;
+       }
+
+       header {
+           background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../b.jpg);
+           height: 100vh;
+           background-size: cover;
+           min-height: 100px;
+       }
+
+       .logo {
+           margin-left: 20px;
+           display: inline-block;
+       }
+
+       nav {
+           display: flex;
+           padding: 1% 2%;
+           justify-content: space-between;
+           align-items: center;
+           margin-top: 0%;
+       }
+
+       nav img {
+           width: 150px;
+           margin-bottom: 0%;
+       }
+
+       ul {
+           list-style-type: none;
+           font-size: 17px;
+       }
+
+       ul li {
+           display: inline-block;
+           margin-right: 20px;
+           top: 10%;
+       }
+
+       ul li a {
+           text-decoration: none;
+           color: white;
+           padding: 5px 18px;
+           border: 1px solid transparent;
+           transition: 0.5s ease;
+       }
+
+       ul li a:hover {
+           background-color: lightskyblue;
+           color: black;
+       }
+
+       .title1 {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+       }
+
+       .title1 h1 {
+           font-size: 40px;
+           font-style: initial;
+           margin-bottom: 25px;
+           margin-left: 15px;
+       }
+
+       .title1 h2 {
+           color: rgb(249, 249, 249);
+           font-size: 19px;
+           font-style: italic;
+           margin-top: 20px;
+       }
+
+       .cta-buttons {
+           text-align: center;
+           margin-top: 40px;
+       }
+
+       button {
+           padding: 10px 20px;
+           font-size: 16px;
+           background-color: #4CAF50;
+           color: #fff;
+           border: none;
+           cursor: pointer;
+       }
+
+       button:hover {
+           background-color: #45a049;
+       }
+
+       .main-content {
+           padding: 20px;
+       }
+
+       .content-columns {
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+       }
+
+       .column {
+           flex-basis: 30%;
+           margin-bottom: 20px;
+           text-align: center;
+       }
+
+       footer {
+           background-color: black;
+           color: white;
+           text-align: center;
+           padding: 10px;
+           position: bottom;
+           width: 100%;
+           bottom: 0;
+           position: bottom;
+       }
+
+       .column {
+           text-align: center;
+           margin-bottom: 40px;
+       }
+
+       .column img {
+           width: 20%;
+           height: auto;
+       }
+
+       .attractive-text {
+           font-size: 25px;
+           color: #cbd411;
+           margin-top: 10px;
+           font-style: initial;
+       }
+   </style>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                <a href="index.html" class="logo"><img src="logo1.jpg"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index1.html">Services</a></li>
+                        <li><a href="index3.html">About Us</a></li>
+                        <li><a href="index4.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <section class="title1">
+            <h1>Innovation is a journey that starts with a brilliant strategy and continues through laser-focused execution.</h1>
+            <h2>We’ll help you apply the power of technology to innovate, disrupt and outperform.</h2>
+            <div class="cta-buttons">
+                <button onclick="scrollToContent()">know More</button>      
+            </div>
+        </section>
+    </header>
+
+    <section class="main-content">
+        <div class="content-columns">
+            <div class="column">
+                <img src="tick.png" alt="Mobile App Development">
+                <h3>Simple</h3>
+                <p>
+                  We take a lean approach to product management to 
+                  eliminate delays, reduce project costs and speed up time to market.
+                </p>
+            </div>
+            <div class="column">
+                <img src="bulb.ipg.jpeg" alt="Why Choose Us?">
+                <h3>Innovative</h3>
+                <p>
+                  We use innovative tools, technologies, and development 
+                  methods to build solutions that achieve agility, efficiency, and growth at scale.
+                </p>
+            </div>
+            <div class="column">
+                <img src="graph.ipg.jpeg" alt="Our Approach">
+                <h3>Effective</h3>
+                <p>
+                  With our True Systems methodology, we build integrated solutions that perform,
+                   scale and measure up against business KPIs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add more sections/content as needed -->
+
+    <!-- Copyright Notice -->
+    <footer>
+        <p>&copy; 2024 jdk technologies. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToContent() {
+            var contentSection = document.querySelector('.main-content');
+            contentSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
